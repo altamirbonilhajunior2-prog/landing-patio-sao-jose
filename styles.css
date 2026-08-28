@@ -879,3 +879,48 @@ h2 {
 .faq-item li + li {
   margin-top: 7px;
 }
+
+/* Cabeçalho mobile: acesso institucional visível ao lado do menu */
+@media (max-width: 760px) {
+  .site-header {
+    gap: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .brand {
+    order: 1;
+    width: clamp(100px, 30vw, 128px);
+    min-width: clamp(100px, 30vw, 128px);
+  }
+
+  .brand img {
+    width: clamp(98px, 29vw, 124px);
+  }
+
+  .header-cta {
+    order: 2;
+    display: inline-flex;
+    width: clamp(104px, 31vw, 126px);
+    min-width: 0;
+    max-width: none;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 6px 8px;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 9px;
+    line-height: 1.1;
+    box-shadow: 0 0 0 2px rgba(209, 154, 50, 0.13);
+  }
+
+  .menu-toggle {
+    order: 3;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-left: 0;
+  }
+}
