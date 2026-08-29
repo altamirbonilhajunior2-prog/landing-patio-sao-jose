@@ -323,19 +323,6 @@ h2 {
   line-height: 1.55;
 }
 
-.market-note {
-  margin: 0;
-  padding: 20px 24px 0;
-  border-top: 1px solid rgba(209, 154, 50, 0.28);
-  color: #bbb;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-.market-note b {
-  color: var(--gold-light);
-}
-
 .section {
   padding: 76px 4.8vw;
 }
@@ -985,10 +972,6 @@ h2 {
     padding-top: 22px;
     border-top: 1px solid rgba(209, 154, 50, 0.38);
     border-left: 0;
-  }
-
-  .market-note {
-    padding: 20px 2px 0;
   }
 
   .location-map iframe {
