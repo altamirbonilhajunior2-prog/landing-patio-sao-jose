@@ -270,6 +270,72 @@ h2 {
   font-size: 14px;
 }
 
+.market-summary {
+  padding: 38px 4.8vw;
+  background: #070707;
+}
+
+.market-card {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid rgba(209, 154, 50, 0.48);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #17140f, #0c0c0c);
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.market-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.market-metric {
+  padding: 6px 30px 20px;
+}
+
+.market-metric + .market-metric {
+  border-left: 1px solid rgba(209, 154, 50, 0.38);
+}
+
+.market-label {
+  margin: 0 0 8px;
+  color: var(--gold-light);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.market-metric strong {
+  display: block;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3.6vw, 42px);
+}
+
+.market-metric p:last-child {
+  max-width: 660px;
+  margin: 10px auto 0;
+  color: #d7d7d7;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.market-note {
+  margin: 0;
+  padding: 20px 24px 0;
+  border-top: 1px solid rgba(209, 154, 50, 0.28);
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.market-note b {
+  color: var(--gold-light);
+}
+
 .section {
   padding: 76px 4.8vw;
 }
@@ -302,6 +368,23 @@ h2 {
 .light {
   background: var(--cream);
   color: var(--ink);
+}
+
+.location-map {
+  max-width: 1100px;
+  margin: 34px auto 0;
+  overflow: hidden;
+  border: 1px solid rgba(134, 91, 21, 0.38);
+  border-radius: 14px;
+  background: #e9e4d8;
+  box-shadow: 0 18px 42px rgba(28, 23, 13, 0.16);
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
 }
 
 .dark,
@@ -882,6 +965,36 @@ h2 {
 
 /* Cabeçalho mobile: acesso institucional visível ao lado do menu */
 @media (max-width: 760px) {
+  .market-summary {
+    padding: 30px 20px;
+  }
+
+  .market-card {
+    padding: 24px 18px;
+  }
+
+  .market-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .market-metric {
+    padding: 4px 4px 22px;
+  }
+
+  .market-metric + .market-metric {
+    padding-top: 22px;
+    border-top: 1px solid rgba(209, 154, 50, 0.38);
+    border-left: 0;
+  }
+
+  .market-note {
+    padding: 20px 2px 0;
+  }
+
+  .location-map iframe {
+    height: 340px;
+  }
+
   .site-header {
     gap: 6px;
     padding-right: 12px;
