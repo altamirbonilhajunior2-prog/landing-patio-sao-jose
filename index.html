@@ -12,7 +12,7 @@
 <title>Pátio São José | Apartamento para Morar ou Investir</title>
 <meta name="description" content="Pátio São José: 70 m², 2 dormitórios, suíte, planta adaptável, vaga, hobby box e mais de 900 m² de áreas comuns.">
 <meta property="og:title" content="Pátio São José | Centro de São José dos Campos"><meta property="og:description" content="Uma planta adaptável para morar, investir e gerar renda imobiliária."><meta property="og:type" content="website"><meta property="og:image" content="assets/hero-patio.png"><meta name="theme-color" content="#07111f">
-<link rel="stylesheet" href="styles.css?v=1.2"></head><body>
+<link rel="stylesheet" href="styles.css?v=1.3"></head><body>
 <header class="site-header">
 <a class="brand" href="#inicio" aria-label="B&B Consultoria Imobiliária"><img src="assets/logo-bb.png" alt="B&B Consultoria Imobiliária"></a>
 <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
@@ -87,4 +87,26 @@
 </main><footer class="footer"><img src="assets/logo-bb-footer.png" alt="B&B Consultoria Imobiliária"><p>Pátio São José | Centro de São José dos Campos</p></footer>
 <a class="floating-whatsapp whatsapp-link" data-cta-location="flutuante" href="https://wa.me/5512978140636?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20P%C3%A1tio%20S%C3%A3o%20Jos%C3%A9.%20Gostaria%20de%20receber%20a%20apresenta%C3%A7%C3%A3o%20e%20as%20condi%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">☏</a>
 <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Fechar">×</button><button class="lightbox-arrow lightbox-prev" type="button" aria-label="Foto anterior">‹</button><img id="lightbox-img" src="" alt="Foto ampliada"><button class="lightbox-arrow lightbox-next" type="button" aria-label="Próxima foto">›</button><div class="lightbox-count" id="lightbox-count"></div></div>
-<script src="script.js?v=1.1" defer></script></body></html>
+<aside class="property-lead-prompt" id="property-lead-prompt" role="dialog" aria-label="Receber informações sobre o Pátio São José" hidden>
+  <button class="lead-prompt-close" type="button" aria-label="Fechar convite">×</button>
+  <div class="lead-prompt-content">
+    <p class="lead-prompt-kicker">Atendimento B&amp;B</p>
+    <h2>Gostou deste imóvel?</h2>
+    <p>Receba valores, disponibilidade e informações sobre a referência BBA002 diretamente pelo WhatsApp.</p>
+  </div>
+  <form class="lead-prompt-form" id="lead-prompt-form">
+    <div class="lead-honeypot" aria-hidden="true"><label>Empresa <input name="company" type="text" tabindex="-1" autocomplete="off"></label></div>
+    <label><span>Seu nome</span><input name="name" type="text" required minlength="2" maxlength="120" autocomplete="name" placeholder="Como podemos chamar você?"></label>
+    <label><span>WhatsApp com DDD</span><input name="phone" type="tel" required maxlength="20" autocomplete="tel" inputmode="tel" placeholder="(12) 99999-9999"></label>
+    <label class="lead-consent"><input name="consent" type="checkbox" required><span>Autorizo a B&amp;B Consultoria Imobiliária a entrar em contato comigo pelo WhatsApp sobre este imóvel. Poderei solicitar a interrupção do contato a qualquer momento.</span></label>
+    <p class="lead-form-status" id="lead-form-status" aria-live="polite"></p>
+    <button class="lead-submit" type="submit">Receber informações</button>
+  </form>
+  <div class="lead-success" id="lead-success" hidden>
+    <p class="lead-prompt-kicker">Interesse registrado</p>
+    <h2>Obrigado.</h2>
+    <p>A B&amp;B recebeu seu interesse no Pátio São José e entrará em contato pelo WhatsApp informado.</p>
+    <a class="lead-whatsapp whatsapp-link" data-cta-location="convite-sucesso" href="https://wa.me/5512978140636?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20P%C3%A1tio%20S%C3%A3o%20Jos%C3%A9." target="_blank" rel="noopener">Falar agora com a B&amp;B</a>
+  </div>
+</aside>
+<script src="script.js?v=1.2" defer></script></body></html>
